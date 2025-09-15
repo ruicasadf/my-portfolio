@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нахратов Юрий - Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/12879718.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <span class="logo">Frontend Dev</span>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="#home" class="nav__link">Главная</a></li>
+                <li><a href="#about" class="nav__link">О себе</a></li>
+                <li><a href="#skills" class="nav__link">Навыки</a></li>
+                <li><a href="#projects" class="nav__link">Проекты</a></li>
+                <li><a href="#roadmap" class="nav__link">Roadmap</a></li>
+                <li><a href="#contact" class="nav__link">Контакты</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                <span class="theme-toggle__icon">🌙</span>
+            </button>
+            <button class="nav__toggle" id="navToggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero__background"></div>
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <h1 class="hero__title">
+                            <span class="hero__greeting">Привет, я</span>
+                            <span class="hero__name">Frontend Developer, Нахратов Юрий</span>
+                        </h1>
+                        <p class="hero__subtitle">Разработчик пользовательских интерфейсов</p>
+                        <p class="hero__description">Создаю современные веб-приложения с красивым дизайном и отличным пользовательским опытом</p>
+                        <div class="hero__buttons">
+                            <a href="#projects" class="btn btn--primary">Мои проекты</a>
+                            <a href="#contact" class="btn btn--outline">Связаться</a>
+                        </div>
+                    </div>
+                    <div class="hero__visual">
+                        <div class="hero__avatar">
+                            <div class="avatar-placeholder">
+                                <span class="avatar-icon">👨‍💻</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section__title">О себе</h2>
+                <div class="about__content">
+                    <div class="about__info">
+                        <h3 class="about__name">Frontend Developer</h3>
+                        <p class="about__location">📍 Новосибирск, Россия</p>
+                        <p class="about__description">
+                            Студент факультета рекламы и связей с общественностью НГУЭУ, изучающий фронтенд разработку. 
+                            Увлечен созданием современных веб-приложений с красивым пользовательским интерфейсом.
+                        </p>
+                        <div class="about__links">
+                            <a href="https://github.com/ruicasadf" target="_blank" class="social-link">
+                                <span class="social-icon">🐙</span>
+                                GitHub
+                            </a>
+                            <a href="urijhornin@gmail.com" class="social-link">
+                                <span class="social-icon">📧</span>
+                                Email
+                            </a>
+                            <a href="http://t.me/crupica" target="_blank" class="social-link">
+                                <span class="social-icon">💬</span>
+                                Telegram
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about__photo">
+                        <div class="photo-placeholder">
+                            <span class="photo-icon">👤</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section__title">Навыки</h2>
+                <div class="skills__grid">
+                    <div class="skill-card" data-skill="HTML5">
+                        <div class="skill-card__icon">🌐</div>
+                        <h3 class="skill-card__name">HTML5</h3>
+                        <div class="skill-card__progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="90"></div>
+                            </div>
+                            <span class="progress-text">90%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="CSS3">
+                        <div class="skill-card__icon">🎨</div>
+                        <h3 class="skill-card__name">CSS3</h3>
+                        <div class="skill-card__progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="85"></div>
+                            </div>
+                            <span class="progress-text">85%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="JavaScript">
+                        <div class="skill-card__icon">⚡</div>
+                        <h3 class="skill-card__name">JavaScript</h3>
+                        <div class="skill-card__progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="80"></div>
+                            </div>
+                            <span class="progress-text">80%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="React">
+                        <div class="skill-card__icon">⚛️</div>
+                        <h3 class="skill-card__name">React</h3>
+                        <div class="skill-card__progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="75"></div>
+                            </div>
+                            <span class="progress-text">75%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="TypeScript">
+                        <div class="skill-card__icon">📘</div>
+                        <h3 class="skill-card__name">TypeScript</h3>
+                        <div class="skill-card__progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="70"></div>
+                            </div>
+                            <span class="progress-text">70%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="Git/GitHub">
+                        <div class="skill-card__icon">📝</div>
+                        <h3 class="skill-card__name">Git/GitHub</h3>
+                        <div class="skill-card__progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="85"></div>
+                            </div>
+                            <span class="progress-text">85%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="Responsive Design">
+                        <div class="skill-card__icon">📱</div>
+                        <h3 class="skill-card__name">Responsive Design</h3>
+                        <div class="skill-card__progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="90"></div>
+                            </div>
+                            <span class="progress-text">90%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="Node.js">
+                        <div class="skill-card__icon">🟢</div>
+                        <h3 class="skill-card__name">Node.js</h3>
+                        <div class="skill-card__progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="60"></div>
+                            </div>
+                            <span class="progress-text">60%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section__title">Мои проекты</h2>
+                <div class="projects__grid">
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <div class="project-icon">🎮</div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Tic-Tac-Toe Game</h3>
+                            <p class="project-card__description">
+                                Интерактивная игра крестики-нолики с возможностью игры против ИИ. 
+                                Реализован с использованием vanilla JavaScript и современного CSS.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <a href="https://ruicasadf.github.io/tic-tac-toe-game" target="_blank" class="project-card__link">
+                                Посмотреть проект →
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <div class="project-icon">🌤️</div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Weather App</h3>
+                            <p class="project-card__description">
+                                Приложение для отображения текущей погоды с интеграцией внешнего API. 
+                                Адаптивный дизайн и геолокация.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                            <a href="https://ruicasadf.github.io/weather-app" target="_blank" class="project-card__link">
+                                Посмотреть проект →
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <div class="project-icon">📝</div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Todo List App</h3>
+                            <p class="project-card__description">
+                                Менеджер задач с возможностью добавления, редактирования и удаления задач. 
+                                Данные сохраняются в localStorage.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">LocalStorage</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                            <a href="https://ruicasadf.github.io/todoList-app" target="_blank" class="project-card__link">
+                                Посмотреть проект →
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <div class="project-icon">🚀</div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Adaptive Landing</h3>
+                            <p class="project-card__description">
+                                Современная адаптивная лендинг страница с анимациями и 
+                                отзывчивым дизайном для различных устройств.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <a href="https://ruicasadf.github.io/adaptive-landing" target="_blank" class="project-card__link">
+                                Посмотреть проект →
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <div class="project-icon">💻</div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Web Application</h3>
+                            <p class="project-card__description">
+                                Полноценное веб-приложение, развернутое на Netlify. 
+                                Демонстрирует навыки работы с современными инструментами разработки.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                            <a href="https://nimble-halva-60b780.netlify.app/" target="_blank" class="project-card__link">
+                                Посмотреть проект →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap Section -->
+        <section id="roadmap" class="roadmap section">
+            <div class="container">
+                <h2 class="section__title">Roadmap обучения</h2>
+                <div class="roadmap__timeline">
+                    <div class="roadmap-item completed">
+                        <div class="roadmap-item__marker"></div>
+                        <div class="roadmap-item__content">
+                            <h3 class="roadmap-item__title">HTML/CSS Основы</h3>
+                            <div class="roadmap-item__progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="100"></div>
+                                </div>
+                                <span class="progress-text">Завершено</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="roadmap-item completed">
+                        <div class="roadmap-item__marker"></div>
+                        <div class="roadmap-item__content">
+                            <h3 class="roadmap-item__title">JavaScript ES6+</h3>
+                            <div class="roadmap-item__progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="100"></div>
+                                </div>
+                                <span class="progress-text">Завершено</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="roadmap-item current">
+                        <div class="roadmap-item__marker"></div>
+                        <div class="roadmap-item__content">
+                            <h3 class="roadmap-item__title">React Ecosystem</h3>
+                            <div class="roadmap-item__progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="75"></div>
+                                </div>
+                                <span class="progress-text">В процессе - 75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="roadmap-item current">
+                        <div class="roadmap-item__marker"></div>
+                        <div class="roadmap-item__content">
+                            <h3 class="roadmap-item__title">TypeScript</h3>
+                            <div class="roadmap-item__progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="70"></div>
+                                </div>
+                                <span class="progress-text">В процессе - 70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="roadmap-item planned">
+                        <div class="roadmap-item__marker"></div>
+                        <div class="roadmap-item__content">
+                            <h3 class="roadmap-item__title">Node.js & Backend</h3>
+                            <div class="roadmap-item__progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="0"></div>
+                                </div>
+                                <span class="progress-text">Планируется</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="roadmap-item planned">
+                        <div class="roadmap-item__marker"></div>
+                        <div class="roadmap-item__content">
+                            <h3 class="roadmap-item__title">Full-Stack проекты</h3>
+                            <div class="roadmap-item__progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="0"></div>
+                                </div>
+                                <span class="progress-text">Планируется</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section__title">Обратная связь</h2>
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <h3>Давайте работать вместе!</h3>
+                        <p>Готов к новым вызовам и интересным проектам. Свяжитесь со мной, если у вас есть предложения по сотрудничеству.</p>
+                        <div class="contact__links">
+                            <div class="contact__link">
+                                <span class="contact__icon">📧</span>
+                                <span>urijhornin@gmail.com</span>
+                            </div>
+                            <div class="contact__link">
+                                <span class="contact__icon">📍</span>
+                                <span>Новосибирск, Россия</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact__form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Имя</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Сообщение</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h3>Frontend Developer</h3>
+                    <p>Создаю современные веб-решения</p>
+                </div>
+                <div class="footer__links">
+                    <a href="https://github.com/ruicasadf" target="_blank" class="footer__link">GitHub</a>
+                    <a href="mailto:urijhornin@gmail.com" class="footer__link">Email</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Frontend Developer. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
